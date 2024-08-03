@@ -8,13 +8,15 @@ function takeInfoHP() {
     for (let j = 0; j < N; j++) {
       // row
       let row = document.createElement("div");
-      $(row).addClass("row row-cols-3 row-cols-md-2 g-4");
+      $(row).addClass("row mt-5 justify-content-around");
       document.body.getElementsByClassName("container")[0].appendChild(row);
 
       for (let i = 0; i < COUNT_COLUMN; i++) {
         if (typeof data.data[j * 3 + i] == "undefined") break; // Если информации нет, значит мы прошли все объекты API
         // card
         let card = document.createElement("div");
+        // $(card).addClass("col");
+        // document.body.getElementsByClassName("card")[0].appendChild(card);
 
         // Tip: avoid this ton of code using AniJS ;)
 
