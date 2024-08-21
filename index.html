@@ -18,11 +18,7 @@
     </script>
 
     <style>
-      body
-      {
-        
-        background: url(Images/FON.jpg);
-      }
+     
       p {
         padding-left: 10pt;
         text-indent: 2em;
@@ -65,7 +61,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="2-page.html">Прогнозы</a>
+                <a class="nav-link" href="index-4.html">Топ монет</a>
               </li>
               <li class="nav-item">
                   <li class="nav-item">
@@ -84,7 +80,7 @@
 <div>
 <h1>BitTrand</h1>
       
-
+<div class="container-fluid">
       <h3>
         <p class="lxgw-wenkai-mono-tc-regular" ;>
           <b>
@@ -103,10 +99,13 @@
           ссылки на каждый из проектов.
         </p>
       </h4>
-      <div>
-        <ol>
-          <li>Bitcoin (BTC)</li>
-          <a href="https://bitcoin.inc//" target="_blank">
+      </div>
+      <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+        
+         <p style="font-size: 20px;">Bitcoin (BTC)</p>
+          <p style="margin-left: 20px;"><a href="https://bitcoin.inc//" target="_blank">
             <img
               class="rounded-img"
               src="Images/btc.png"
@@ -115,7 +114,7 @@
               alt="Биткоин"
             />
           </a>
-
+        </p>
           <ul>
             <li>
               <a
@@ -132,8 +131,10 @@
             </li>
           </ul>
 
-          <li>Etherium (ETH)</li>
-          <a href="https://ethereum.org/ru" target="_blank">
+        </div>
+        <div class="col">
+          <p style="font-size: 20px;">Etherium (ETH)</p>
+          <p style="margin-left: 20px;"><a href="https://ethereum.org/ru" target="_blank">
             <img
               class="rounded-img"
               src="Images/ETH.png"
@@ -141,7 +142,7 @@
               height="80"
               alt="Эфир"
             />
-          </a>
+          </a></p>
           <ul>
             <li>
               <a
@@ -157,16 +158,17 @@
               </a>
             </li>
           </ul>
-
-          <li>Toncoin (TON)</li>
-          <a href="https://ton.org/ru" target="_blank">
+        </div>
+        <div class="col">
+          <p style="font-size: 20px;">Toncoin (TON)</p>
+          <p style="margin-left: 20px;"><a href="https://ton.org/ru" target="_blank">
             <img
               class="rounded-img"
               src="Images/TON.png"
               width="80"
               height="80"
               alt="Тонкоин"
-            />
+            /></p>
           </a>
           <ul>
             <li>
@@ -174,7 +176,7 @@
                 href="https://ru.tradingview.com/symbols/TONUSD/"
                 target="_blank"
               >
-                Текущий курс Toncoin на графике
+                Текущий курс TON на графике
               </a>
             </li>
             <li>
@@ -183,17 +185,23 @@
               </a>
             </li>
           </ul>
-        </ol>
+        </div>
       </div>
-     <div style="margin-left: 10%;">
-    <div id="BTC"  class="Chart">   
     </div>
-  </div>
-    <br></br>      
-      <div style="margin-top: 5%; margin-left: 10%; margin-bottom: 10%;">
-        <p style="margin-left: -150px;">
-          Таблица исторической стоимости самой распространенной криптовалюты (Btc)
-        </p>
+    
+    <br></br>    
+    <p style="text-align: center; margin-bottom: 75px; font-size: 25px;">
+      Таблица исторической стоимости самой распространенной криптовалюты, а также её 24ч индикатор
+    </p>
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col" style="margin-left: 10%;">
+          <div id="BTC"  class="Chart">   
+          </div>
+        </div>
+      <div class="col" style="margin-left: 10%; margin-bottom: 10%;">
+
+
         <table class="qwerty" style="text-align: center">
           <tr>
             <td><b>Дата</b></td>
@@ -217,8 +225,9 @@
           </tr>
         </table>
       </div>
-  
-  
+      
+  </div>
+  </div>
 </div>
 
     <script
@@ -226,6 +235,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"> 
     </script>
+
 
   </body>
 </html>

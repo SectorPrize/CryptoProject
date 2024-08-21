@@ -54,14 +54,14 @@
           <div  class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 pb-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                  <a class="nav-link" aria-current="page" href="index.html">Главная</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="2-page.html">Прогнозы</a>
+                  <a class="nav-link" href="index-4.html">Топ монет</a>
                 </li>
                 <li class="nav-item">
                     <li class="nav-item">
-                        <a class="nav-link" href="3-page.html">Биржи</a>
+                        <a class="nav-link active" href="3-page.html">Биржи</a>
                       </li>
                   </ul>
                 
@@ -77,20 +77,21 @@
 </head>
 <title>BitTrand</title>
 <body>
+  
     <div class="container-xxl mt-5">
         <div class="row gap-5 mt-5">
            
-            <div id="carouselExample" class="carousel slide col-xl-6"  data-bs-theme="dark">
-                <div class="carousel-inner">
+            <div id="carouselExample" class="carousel slide col-xl-6" style="margin-top: 20px;" data-bs-theme="dark">
+                <div class="carousel-inner" id="bybit">
                   <div class="carousel-item active">
                     <a href="https://www.bybit.com/" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/4d/7e/f4/4d7ef42d-7699-7a22-7f5e-a3dce3ddbcf7/AppIcon-1x_U007emarketing-0-10-0-0-85-220-0.png/1200x630wa.png" height="350px" class="d-block w-100" alt="...">
                 </a>  
                 </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" id="kucoin">
                     <a href="https://www.kucoin.com/ru" target="_blank"><img src="https://avatars.dzeninfra.ru/get-zen_doc/9663006/pub_6422be919b207461193eea33_6422beb56051b634c33e20ea/scale_1200" height="350px" class="d-block w-100" alt="...">
                     </a>
                     </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" id="okx">
                     <a href="https://www.okx.com/ru" target="_blank"><img src="https://insilicoterminal.com/img/okx.41d9a45e.png" height="350px" class="d-block w-100" alt="...">
                     </a>
                     </div>
@@ -109,16 +110,36 @@
                     <span class="badge rounded-pill text-bg-success ms-3"> <h1>Самые популярные криптобиржи</h1></span>
                 </div>
                 <div id="informationProduct" class="p-3 h-75 d-flex align-items-center justify-content-center">
-                    <div>
-                        <p style="margin-top: 10px; font-size: 25px;">Здесь представлены проверенные биржи, торговля на которых не запрещена для резидентов РФ</p>
-                        <div class="d-grid">
+                  <div  id = "info"  style="margin-top: 5px; font-size: 17px; font-weight: bold;">
+                        <p>
+                          <span style="font-size:20px; color:rgb(130, 33, 33)">Bybit</span> — биржа криптовалют, основанная в 2018 году. Биржа Bybit зарегистрирована на Британских Виргинских островах. Основные сервера биржи расположены в Сингапуре, а управленческий офис — в Дубае. Официальная позиция Bybit выглядит следующим образом: «Мы заняли полностью нейтральную позицию, поскольку Bybit не находится под юрисдикцией Российской Федерации или Европы, поэтому мы остаемся лояльными и поддерживаем всех пользователей, не блокируя счета, если они не нарушают правила биржи».</p>
+                       <!-- <div class="d-grid">
                             <button type="button" class="btn btn-dark btn-lg mt-5 mx"><i class="bi bi-basket2"></i>Посмотреть список бирж, торговля на которых запрещена резидентам РФ, либо сопряжена с рисками</button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+      let cards_value = [];
+ cards_value[0] =
+   "<span style='font-size:20px; color:rgb(130, 33, 33)'>Bybit</span> — биржа криптовалют, основанная в 2018 году. Биржа Bybit зарегистрирована на Британских Виргинских островах.  Основные сервера биржи расположены в Сингапуре, а управленческий офис — в Дубае. Официальная позиция Bybit выглядит следующим образом: «Мы заняли полностью нейтральную позицию, поскольку Bybit не находится под юрисдикцией Российской Федерации или Европы, поэтому мы остаемся лояльными и поддерживаем всех пользователей, не блокируя счета, если они не нарушают правила биржи».";
+
+ cards_value[1] =
+   "<span style='font-size:20px; text-decoration: underline; color:rgb(130, 33, 33)'>Kucoin</span> - Работает с 2014 года. Зарегистрирована на Сейшельских островах и состоит из примерно 20 филиалов по всему миру. Учитывая, что биржа работает с подсанкционным Ираном, то нам вряд ли грозит блокировка аккаунтов по её инициативе. У KuCoin есть собственный блокчейн KuCoin Chain (KCC). Это криптовалюта-экосистема, предоставляющая инструментарий разработчикам для создания Dapps и NFT. То есть относится к тому же типу крипты, что и Ethereum, BNBChain, Avalanche, Solana и др.";
+
+ cards_value[2] = "<p style='margin top: 25px;'><span style='font-size:20px; text-decoration: underline; color:rgb(130, 33, 33)'>   OKX</span> - глобальная биржа спотов криптовалют и деривативов и вторая по величине криптовалютная биржа по объему торгов, обслуживающая более 50 миллионов человек по всему миру. Штаб-квартира находится на Сейшельских островах. В настоящее время компания работает на мировых рынках, включая Гонконг, Объединенные Арабские Эмираты, Багамские Острова и Францию. OKX имеет офисы в Дубае, Турции, Гонконге, Силиконовой долине, Сингапуре и Австралии. OKX имеет партнерские отношения с брендами и спортивными командами, такими как 'Манчестер Сити', McLaren и Олимпийская сборная Австралии. OKX спонсирует Кинофестиваль Tribeca с 2022 года и предоставляет эксклюзивность для маркетплейсов с невзаимозаменяемыми токенами (NFT), криптовалютных бирж на мероприятиях Tribeca.</p>";
+
+ let myCarousel  = document.querySelector('#carouselExample');
+ let inform = document.querySelector('#info');
+
+   myCarousel.addEventListener('slide.bs.carousel',  (event) => {
+   
+   inform.innerHTML = "<p>"+cards_value[event.to]+"</p>";
+ });
+
+   </script>  
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
