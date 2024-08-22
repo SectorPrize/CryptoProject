@@ -1,0 +1,22 @@
+p {
+  padding-left: 10pt;
+  text-indent: 2em;
+}
+ol {
+  margin-left: 15px;
+}
+ul {
+  margin-left: 5px;
+  margin-bottom: 20pt;
+  padding-bottom: 20pt;
+}
+h4 {
+  font-size: 15pt;
+}
+
+.rounded-img {
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(26, 9, 9, 0.4);
+  padding: 0.2em;
+  margin-bottom: 1em;
+}
