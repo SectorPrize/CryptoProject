@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(Images/FON.jpg);
+  background: url(../Images/FON.jpg);
 }
 
 h1 {
@@ -14,14 +14,14 @@ h1 {
 
 .Chart {
   table {
-    width: 50%;
+    width: 10%;
     border: 3px solid #666;
     text-align: center;
   }
 
   td,
   th {
-    padding: 10px; /* Поля вокруг текста */
+    padding: 5px; /* Поля вокруг текста */
     border: 1px solid #666;
   }
 }
@@ -35,13 +35,13 @@ tr:hover {
 
 .qwerty {
   table {
-    width: 200px;
+    width: 20%;
     border: 3px solid #666;
   }
 
   td,
   th {
-    padding: 5px 20px; /* Поля вокруг текста */
+    padding: 5px 10px; /* Поля вокруг текста */
     border: 1px solid #666;
   }
 }
@@ -59,14 +59,7 @@ tr:hover {
   height: 360px;
 }
 
-p {
-  text-indent: 2em;
-}
-ol {
-  margin-left: 15px;
-}
 ul {
-  margin-left: 5px;
   margin-bottom: 20pt;
   padding-bottom: 20pt;
 }
@@ -77,6 +70,5 @@ h4 {
 .rounded-img {
   border-radius: 50%;
   box-shadow: 0 0 3px rgba(26, 9, 9, 0.4);
-  padding: 0.2em;
   margin-bottom: 1em;
 }

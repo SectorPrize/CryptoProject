@@ -33,7 +33,9 @@ function inputData() {
       tmp.innerHTML = price_now;
 
       tmp = document.getElementsByClassName("card")[i].querySelectorAll("p")[1];
-      tmp.innerHTML = `Изменение за 24ч: ${data.data[i].changePercent24Hr} %`;
+      tmp.innerHTML = `Изменение за 24ч: ${Number([
+        data.data[i].changePercent24Hr,
+      ]).toFixed(2)} %`;
 
       tmp = document.getElementsByClassName("card")[i].querySelectorAll("p")[2];
       let linkProject = data.data[i].explorer;
@@ -59,7 +61,7 @@ function createCards(N) {
         "data-anijs",
         `if: mouseover, on: #card${j * 3 + i}, do: pulse animated`
       );
-      card.style.width = "25rem";
+      card.style.width = "18rem";
       card.classList.add("card");
 
       let card_body = document.createElement("div");
